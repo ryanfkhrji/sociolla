@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <!-- tailwindcss -->
+  <link href="./styles/output.css" rel="stylesheet">
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <!-- fav icons -->
+  <link rel="shortcut icon" href="/src/assets/logo-sociolla.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Register -->
+  <section class="bg-pink-100">
+    <div class="container flex items-center justify-center h-screen">
+      <div class="w-full max-w-md p-4 bg-white rounded-md shadow-sm">
+        <h1 class="mb-1 text-3xl font-semibold text-pink-700">Register</h1>
+        <p class="mb-8 text-slate-500">Welcome, Please enter your details</p>
+        <form action="">
+          <div class="mb-2">
+            <label for="name" class="block mb-2 text-base">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required
+              class="w-full px-4 py-2 mb-4 border rounded-sm outline-none border-slate-200 placeholder:opacity-50">
+          </div>
+          <div class="mb-2">
+            <label for="email" class="block mb-2 text-base">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required
+              class="w-full px-4 py-2 mb-4 border rounded-sm outline-none border-slate-200 placeholder:opacity-50">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="block mb-2 text-base">Password</label>
+            <input type="password" name="password" id="password" placeholder="********" required
+              class="w-full px-4 py-2 mb-4 border rounded-sm outline-none border-slate-200 placeholder:opacity-50">
+          </div>
+          <button class="w-full px-4 py-2 mb-4 text-white bg-pink-700 rounded-sm">Register</button>
+          <p class=" text-slate-500">Have an account? <a href="/src/login.html"
+              class="font-bold text-pink-700">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Login -->
+
+  <!-- Feather Icons -->
+  <script src="/node_modules/feather-icons/dist/feather.js"></script>
+  <script>
+    feather.replace();
+  </script>
+  <!-- Feather Icons -->
+</body>
+
+</html>
