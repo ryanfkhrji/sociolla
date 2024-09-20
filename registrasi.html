@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Register</title>
   <!-- tailwindcss -->
-  <link href="./styles/output.css" rel="stylesheet">
+  <link href="/src/styles/output.css" rel="stylesheet">
 
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,18 @@
 </head>
 
 <body>
-  <!-- Login -->
+  <!-- Register -->
   <section class="bg-pink-100">
     <div class="container flex items-center justify-center h-screen">
       <div class="w-full max-w-md p-4 bg-white rounded-md shadow-sm">
-        <h1 class="mb-1 text-3xl font-semibold text-pink-700">Login</h1>
+        <h1 class="mb-1 text-3xl font-semibold text-pink-700">Register</h1>
         <p class="mb-8 text-slate-500">Welcome, Please enter your details</p>
         <form action="">
+          <div class="mb-2">
+            <label for="name" class="block mb-2 text-base">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required
+              class="w-full px-4 py-2 mb-4 border rounded-sm outline-none border-slate-200 placeholder:opacity-50">
+          </div>
           <div class="mb-2">
             <label for="email" class="block mb-2 text-base">Email</label>
             <input type="email" name="email" id="email" placeholder="example@gmail.com" required
@@ -36,8 +41,9 @@
             <input type="password" name="password" id="password" placeholder="********" required
               class="w-full px-4 py-2 mb-4 border rounded-sm outline-none border-slate-200 placeholder:opacity-50">
           </div>
-          <button class="w-full px-4 py-2 mb-4 text-white bg-pink-700 rounded-sm">Login</button>
-          <p class=" text-slate-500">Don't have an account? <a href="/src/registrasi.html" class="font-bold text-pink-700">Register</a></p>
+          <button class="w-full px-4 py-2 mb-4 text-white bg-pink-700 rounded-sm">Register</button>
+          <p class=" text-slate-500">Have an account? <a href="login.html"
+              class="font-bold text-pink-700">Login</a></p>
         </form>
       </div>
     </div>
