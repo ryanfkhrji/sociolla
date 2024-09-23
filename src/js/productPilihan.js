@@ -1,5 +1,5 @@
 function getProductPilihan() {
-  return $.getJSON("data/products.json", function (data) {
+  return $.getJSON("/src/data/products.json", function (data) {
     const product = data.product;
     $.each(product, function (i, data) {
       if (data.name === "Make Over" || data.name === "WARDAH") {
